@@ -36,6 +36,9 @@
     <ClInclude Include="Student.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="DialogADD.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="StudentSystem.cpp">
@@ -48,6 +51,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Student.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogADD.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -63,6 +69,18 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\StudentSystem.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\action_assassins_creed_game_video_128px_1212615_easyicon.net.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Sb_128px_545014_easyicon.net.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\gamepad_game_128px_1181913_easyicon.net.ico">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

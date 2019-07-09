@@ -9,7 +9,7 @@
 #endif
 
 #include "resource.h"		// 主符号
-
+#include "Student.h"
 
 // CStudentSystemApp:
 // 有关此类的实现，请参阅 StudentSystem.cpp
@@ -19,6 +19,9 @@ class CStudentSystemApp : public CWinApp
 {
 public:
 	CStudentSystemApp();
+
+	Head HD = new Node;
+	Management MG;
 
 // 重写
 public:

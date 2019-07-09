@@ -1,24 +1,35 @@
 #pragma once
 #include<iostream>
+#include<fstream>
 #include<cstring>
 using namespace std;
-class Student 
+struct Student 
 {
-public:
-	string Name;
-	string ID;
-	bool Sex;
-	double Math;
-	double CPP;
+	char Name[32];
+	char ID[10];
+	char Sex[6];
+	char Math[5];
+	char CPP[5];
 };
+
+typedef struct Node* List;
+typedef struct Node* Head;
+struct Node
+{
+	int ListNum=0;
+	Student Stu;
+	List Next=NULL;
+};
+
 class Management
 {
 public:
-	void SortMath(Student* A);//数学排序
-	void SortCPP(Student* A);//C++排序
-	void Add(Student* A);//增
-	void Delete(Student* A);//删
-	void Revise(Student *A);//改
-	void SaveData(Student *A);//保存数据
-	Student ReadData();//读取数据
+	void SortMath(Head HD);//数学排序
+	void SortCPP(Head HD);//C++排序
+	void Add(Head HD, CString ID, CString NAME, CString SEX, CString MATH, CString CPP);//增
+	void Delete(Head HD,int selection);//删
+	void Revise(Head H,int selection, CString ID, CString NAME, CString SEX, CString MATH, CString CPP);//改
+	bool SaveData(Head HD, CString filename);//保存数据
+	void DeleteALL(Head HD);//清空数据
+	Head LoadData(CString filename);//读取数据
 };

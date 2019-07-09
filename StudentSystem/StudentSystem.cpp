@@ -52,6 +52,7 @@ BOOL CStudentSystemApp::InitInstance()
 
 	CWinApp::InitInstance();
 
+	
 
 	AfxEnableControlContainer();
 

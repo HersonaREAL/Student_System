@@ -31,4 +31,26 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnBnClickedRadio1();
+	afx_msg void OnBnClickedRadio2();
+	afx_msg void OnLvnItemchangedInfo(NMHDR* pNMHDR, LRESULT* pResult);
+	afx_msg void OnBnClickedAdd();
+	afx_msg void OnBnClickedDelete();
+	afx_msg void OnBnClickedLoaddata();
+	afx_msg void OnBnClickedSavedata();
+	afx_msg void refresh();
+	afx_msg void OnEnChangeEditId();
+	afx_msg void OnNMClickInfo(NMHDR* pNMHDR, LRESULT* pResult);
+
+	CString EDIT_id;
+	CString EDIT_name;
+	CString EDIT_math;
+	CString EDIT_cpp;
+	CString EDIT_sex;
+	afx_msg void OnBnClickedRevise();
+	afx_msg void OnBnClickedSortmath();
+	afx_msg void OnBnClickedSortcpp();
+	afx_msg void OnBnClickedDeleteall();
+	afx_msg void OnBnClickedAnalyse();
 };
