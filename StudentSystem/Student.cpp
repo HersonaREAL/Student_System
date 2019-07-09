@@ -196,3 +196,4 @@ void Management::DeleteALL(Head H) {
 	theApp.HD->Next = NULL;//复原全局链表头
 }
 //我好了
+//我完事了
